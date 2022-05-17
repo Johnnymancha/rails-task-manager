@@ -1,0 +1,16 @@
+<div class="container">
+  <div>
+    <%= link_to 'Edit this task', task_edit_path(@task)%>
+  </div>
+  <div>
+    <h2><%= @task.title%></h2>
+  </div>
+  <div class="detail">
+    <p><%= @task.details %></p>
+  </div>
+  <div class="completed">
+    <p><%= @task.completed %> this tasks not completed</p>
+  </div>
+
+  <%= link_to 'Back to list', tasks_path()%>
+</div>
